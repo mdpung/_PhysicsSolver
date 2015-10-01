@@ -1,6 +1,13 @@
 <resources>
     <string name="app_name">PhysicsSolver</string>
 
-    <string name="hello_world">Hello world!</string>
+    <string name="kinematics_header">Kinematics Solver</string>
     <string name="action_settings">Settings</string>
+    <string name="missingVf">X = Vo*t + 1/2at</string>
+    <string name="missingA">X = 1/2(Vf + Vo)t</string>
+    <string name="missingT">Vf^2 = Vo^2 + 2aX</string>
+    <string name="missingX">Vf = Vo + at</string>
+
+    <string name="calculateButton">Calculate</string>
+
 </resources>
