@@ -34,4 +34,8 @@ public class Kinematics_Solver extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    public void goToPhysicsSolver(View view) {
+
+    }
 }

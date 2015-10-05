@@ -15,58 +15,86 @@
         android:textStyle="bold"
         android:id="@+id/kinematics_header" />
 
-    <TextView android:text="@string/missingVf"
-        android:layout_width="match_parent"
+    <TextView android:text="@string/variableX"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textColor="@color/red"
         android:layout_below="@+id/kinematics_header"
-        android:paddingTop="20sp"
+        android:id="@+id/variableX" />
+
+    <TextView android:text="@string/variableT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textColor="@color/green"
+        android:layout_below="@+id/variableX"
+        android:id="@+id/variableT" />
+
+    <TextView android:text="@string/variableA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textColor="@color/blue"
+        android:layout_below="@+id/variableT"
+        android:id="@+id/variableA" />
+
+    <TextView android:text="@string/variableVf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textColor="@color/orange"
+        android:layout_below="@+id/variableA"
         android:paddingBottom="30sp"
-        android:paddingLeft="20sp"
+        android:id="@+id/variableVf" />
+
+    <TextView android:text="@string/missingVf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/variableVf"
         android:textSize="20sp"
         android:id="@+id/missingVf" />
 
     <TextView android:text="@string/missingA"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_below="@+id/missingVf"
-        android:paddingTop="20sp"
-        android:paddingBottom="30sp"
-        android:paddingLeft="20sp"
         android:textSize="20sp"
         android:id="@+id/missingA" />
 
     <TextView android:text="@string/missingT"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_below="@+id/missingA"
-        android:paddingTop="20sp"
-        android:paddingBottom="30sp"
-        android:paddingLeft="20sp"
         android:textSize="20sp"
         android:id="@+id/missingT" />
 
     <TextView android:text="@string/missingX"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_below="@+id/missingT"
-        android:paddingTop="20sp"
-        android:paddingBottom="30sp"
-        android:paddingLeft="20sp"
         android:textSize="20sp"
+        android:paddingBottom="30sp"
         android:id="@+id/missingX" />
 
-    <Button
+    <Button android:text="@string/calculateButton"
         android:layout_width="300sp"
         android:layout_height="100sp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/missingX"
         android:layout_marginBottom="20sp"
-        android:text="@string/calculateButton"
         android:textSize="30sp"
-        android:id="@+id/calculateButton" />
-
-
+        android:id="@+id/calculateButton"
+        android:onClick="goToKineticsSolver" />
 
 
 </RelativeLayout>
