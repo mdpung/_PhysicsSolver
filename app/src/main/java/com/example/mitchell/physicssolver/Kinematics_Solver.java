@@ -1,9 +1,13 @@
 package com.example.mitchell.physicssolver;
 
+import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
 public class Kinematics_Solver extends AppCompatActivity {
 
@@ -11,6 +15,18 @@ public class Kinematics_Solver extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kinematics__solver);
+
+        TextView textView = (TextView)findViewById(R.id.missingT);
+
+        Resources res = getResources();
+        String textMissingVf = res.getString(R.string.missingVf);
+        textView.setText(Html.fromHtml(textMissingVf));
+        String textMissingA = res.getString(R.string.missingA);
+        textView.setText(Html.fromHtml(textMissingA));
+        String textMissingT = res.getString(R.string.missingT);
+        textView.setText(Html.fromHtml(textMissingT));
+        String textMissingX = res.getString(R.string.missingX);
+        textView.setText(Html.fromHtml(textMissingX));
     }
 
     @Override
@@ -35,7 +51,7 @@ public class Kinematics_Solver extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void goToPhysicsSolver(View view) {
+    public void goToKinSolver(View view) {
 
     }
 }

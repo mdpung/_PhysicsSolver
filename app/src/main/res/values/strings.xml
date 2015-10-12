@@ -7,11 +7,11 @@
     <string name="variableX">X = Change In Distance</string>
     <string name="variableT">t = Time</string>
     <string name="variableA">A = Acceleration</string>
-    <string name="variableVf">Vf = Final Velocity</string>
+    <string name="variableVf">V<sub>f</sub> = Final Velocity</string>
 
-    <string name="missingVf">X = Vo*t + 1/2at</string>
-    <string name="missingA">X = 1/2(Vf + Vo)t</string>
-    <string name="missingT">Vf^2 = Vo^2 + 2aX</string>
+    <string name="missingVf">X = V<sub>0</sub>*t + 1/2at</string>
+    <string name="missingA">X = <mfrac> 1 2 </mfrac>(V<sub>f</sub> + V<sub>0</sub>)t</string>
+    <string name="missingT">V<sub>f</sub><sup>2</sup> = V<sub>0</sub><pow>2</pow> + 2aX</string>
     <string name="missingX">Vf = Vo + at</string>
 
     <string name="calculateButton">Calculator</string>
